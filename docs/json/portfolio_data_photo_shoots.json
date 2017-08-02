@@ -1,0 +1,67 @@
+{
+	"items": [
+		{
+			"type": "photoshoot",
+			"project_name": "Tina",
+			"project_link": "#",
+			"thumbnail": "images/project_img_07.jpg",
+			"project_info": [
+				{
+					"item_name": "Client",
+					"item_value": "Company Name"
+				},
+				{
+					"item_name": "Mua",
+					"item_value": "Jenifer Blow"
+				},
+				{
+					"item_name": "Styling",
+					"item_value": "Company Name Design"
+				}
+			],
+			"read_more_link_text" : "Details"
+		},
+		{
+			"type": "photoshoot",
+			"project_name": "Amanda",
+			"project_link": "#",
+			"thumbnail": "images/project_img_07.jpg",
+			"project_info": [
+				{
+					"item_name": "Client",
+					"item_value": "Company Name"
+				},
+				{
+					"item_name": "Mua",
+					"item_value": "Jenifer Blow"
+				},
+				{
+					"item_name": "Styling",
+					"item_value": "Company Name Design"
+				}
+			],
+			"read_more_link_text" : "Details"
+		},
+		{
+			"type": "photoshoot",
+			"project_name": "Andrea",
+			"project_link": "#",
+			"thumbnail": "images/project_img_07.jpg",
+			"project_info": [
+				{
+					"item_name": "Client",
+					"item_value": "Company Name"
+				},
+				{
+					"item_name": "Mua",
+					"item_value": "Jenifer Blow"
+				},
+				{
+					"item_name": "Styling",
+					"item_value": "Company Name Design"
+				}
+			],
+			"read_more_link_text" : "Details"
+		}
+	]
+}
