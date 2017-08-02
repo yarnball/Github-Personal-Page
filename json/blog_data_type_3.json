@@ -1,0 +1,58 @@
+{
+	"items": [
+		{
+			"type": "3",
+			"entry_title": "Nostrud Exercitation Ullamco",
+			"entry_permalink": "blog_post_with_sidebar.html",
+			"entry_thumb_src": "images/entry_img_04.jpg",
+			"entry_excerpt": "Ut enim ad minim veniam, quis nostrud exercitation commodo ullamco laboris nisi ut aliquip.",
+			"entry_likes": {
+				"link": "#",
+				"inview": "2 likes"
+			},
+			"entry_comments": {
+				"link": "#",
+				"inview": "0 comments"
+			},
+			"entry_date": {
+				"formated": "2016-06-02",
+				"inview": "today"
+			},
+			"entry_categories": [
+				{
+					"name": "Photography",
+					"classname": "photography",
+					"link": "#"
+				}
+			],
+			"read_more_link_text": "Read More"
+		},
+		{
+			"type": "3",
+			"entry_title": "Reprehenderit in Voluptate Velit Esse",
+			"entry_permalink": "blog_post_with_sidebar.html",
+			"entry_thumb_src": "images/entry_img_04.jpg",
+			"entry_excerpt": "Ut enim ad minim veniam, quis nostrud exercitation commodo ullamco laboris nisi ut aliquip.",
+			"entry_likes": {
+				"link": "#",
+				"inview": "3 likes"
+			},
+			"entry_comments": {
+				"link": "#",
+				"inview": "3 comments"
+			},
+			"entry_date": {
+				"formated": "2016-06-02",
+				"inview": "3 days ago"
+			},
+			"entry_categories": [
+				{
+					"name": "Art",
+					"classname": "art",
+					"link": "#"
+				}
+			],
+			"read_more_link_text": "Read More"
+		}
+	]
+}

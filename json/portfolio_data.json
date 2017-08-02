@@ -1,0 +1,46 @@
+{
+	"items": [
+		{
+			"type": "default",
+			"project_name": "Commodo Consequat",
+			"project_link": "#",
+			"thumbnail": "images/project_img_06.jpg",
+			"project_image": "images/img_03.jpg",
+			"categories": [
+				{
+					"name": "Branding",
+					"classname": "branding",
+					"link": "#"
+				}
+			]
+		},
+		{
+			"type": "default",
+			"project_name": "Sed Do Eiusmod",
+			"project_link": "#",
+			"thumbnail": "images/project_img_06.jpg",
+			"project_image": "images/img_03.jpg",
+			"categories": [
+				{
+					"name": "Logo",
+					"classname": "logo",
+					"link": "#"
+				}
+			]
+		},
+		{
+			"type": "default",
+			"project_name": "Ullamco Laboris",
+			"project_link": "#",
+			"thumbnail": "images/project_img_06.jpg",
+			"project_image": "images/img_03.jpg",
+			"categories": [
+				{
+					"name": "Web",
+					"classname": "web",
+					"link": "#"
+				}
+			]
+		}
+	]
+}
