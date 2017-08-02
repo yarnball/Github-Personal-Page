@@ -1,0 +1,1735 @@
+/* ------------------------------------------------------
+	
+	1. Global
+	
+------------------------------------------------------ */
+
+	body{
+		direction: rtl;
+		unicode-bidi: embed;
+	}
+
+/* ------------------------------------------------------
+    
+    2. General Classes
+    
+------------------------------------------------------ */
+
+	.align-left{
+        text-align: right;
+    }
+
+    .align-right{
+        text-align: left;
+    }
+
+    .alignleft{
+        float: right;
+    }
+
+    .alignright{
+        float: left;
+    }
+
+    img.alignleft{
+        margin-right: 0px;
+        margin-left: 30px;
+    }
+
+    img.alignright{
+    	margin-left: 0px;
+    	margin-right: 30px;
+    }
+
+    .fa-long-arrow-right::before{
+        content: "\f177";
+    }
+
+    .fa-long-arrow-left::before{
+        content: "\f178";
+    }
+
+/* ------------------------------------------------------
+    
+    3. Typography
+    
+------------------------------------------------------ */
+
+    .nv-underlined-title::after,
+    .nv-comment .nv-author-name::after,
+    .nv-portfolio.nv-ribbon .nv-project-name::after,
+    .nv-testimonial-item .nv-author-name::after,
+    .nv-portfolio.nv-type-2 .nv-project-name::after,
+    .nv-author.nv-entry-author .nv-author-about::after{
+        left: auto;
+        right: 0;
+    }
+
+    .nv-underlined-title.align-right::after{
+        right: auto;
+        left: 0;
+    }
+
+/* ------------------------------------------------------
+    
+    4. Header
+    
+------------------------------------------------------ */
+
+    /* ------------------------------------------------------
+    
+        4.1. Top Bar
+        
+    ------------------------------------------------------ */
+
+        .nv-top-bar .nv-info-list > li{
+            padding-left: 0px;
+            padding-right: 23px;
+        }
+
+	/* ------------------------------------------------------
+    
+        4.2. Navigation
+        
+    ------------------------------------------------------ */
+
+    	/* ------------------------------------------------------
+    
+            4.2.1. Submenu
+            
+        ------------------------------------------------------ */
+
+        	.nv-dropdown{
+        		left: auto;
+        		right: 0;
+        	}
+
+        	.nv-navigation .nv-dropdown{
+        		left: auto;
+        		right: -21px;
+        	}
+
+        	.nv-navigation .nv-dropdown .nv-dropdown{
+        		left: auto;
+        		right: 100%;
+        		margin: 0 5px 0 0;
+        	}
+
+        	.nv-navigation .nv-dropdown .nv-dropdown::before{
+        		right: auto;
+        		left: 100%;
+        	}
+
+        	.nv-navigation > .nv-has-dropdown > a{
+        		padding-right: 0px;
+        		padding-left: 13px;
+        	}
+
+        	.nv-navigation .nv-has-dropdown::before{
+        		right: auto;
+        		left: 0;
+        	}
+
+        	.nv-navigation .nv-has-dropdown .nv-has-dropdown::before{
+        		right: auto;
+        		left: 10px;
+        	}
+
+        	.nv-navigation .nv-submenu a::before{
+        		border-width: 3px 0 3px 3px;
+        	}
+
+        	.nv-navigation .nv-has-dropdown .nv-has-dropdown::before{
+        		content: "\f0d9";
+        	}
+
+        	.nv-navigation .nv-submenu a::after{
+        		left: auto;
+        		right: 0;
+        	}
+
+        	.nv-navigation{
+        		text-align: right;
+        	}
+
+/* ------------------------------------------------------
+    
+    5. General Elements
+    
+------------------------------------------------------ */
+
+    /* ------------------------------------------------------
+    
+        5.1. Page Sections
+        
+    ------------------------------------------------------ */
+
+        .nv-fw-section-bg-left .nv-bg-element::after,
+        .nv-fw-section-bg-topleft .nv-bg-element::after{
+            right: auto;
+            left: -1px;
+        }
+
+        .nv-fw-section-bg-right .nv-bg-element::after,
+        .nv-fw-section-bg-topright .nv-bg-element::after{
+            left: auto;
+            right: -1px;
+        }
+
+	/* ------------------------------------------------------
+    
+	    5.2. Breadcrumb
+	    
+	------------------------------------------------------ */
+
+		.nv-breadcrumb-image{
+			right: auto;
+			left: 0;
+		}
+
+		.nv-breadcrumb-title{
+			left: auto;
+			right: 7%;
+		}
+
+		.nv-breadcrumb-container{
+			border-width: 3px 0 3px 3px;
+			padding-right: 0px;
+			padding-left: 30px;
+		}
+
+		.nv-breadcrumb-container::before{
+			left: auto;
+			right: 0;
+		}
+
+		.nv-breadcrumb > li:not(:last-child)::after{
+			margin-right: 5px;
+			margin-left: 1px;
+		}
+
+	/* ------------------------------------------------------
+    
+        5.3. Back to Top Button
+        
+    ------------------------------------------------------ */
+
+    	.nv-back-to-top{
+    		right: auto;
+    		left: 15px;
+    	}
+
+    /* ------------------------------------------------------
+    
+        5.5. Tooltips
+        
+    ------------------------------------------------------ */
+
+    	.nv-tooltip.nv-left{
+            left: 100%;
+            right: auto;
+            margin: 0 0 0 10px;
+        }
+
+        .nv-tooltip.nv-right{
+            left: auto;
+            right: 100%;
+            margin: 0 10px 0 0;
+        }
+
+    /* ------------------------------------------------------
+    
+        5.6. Halfpage Columns
+        
+    ------------------------------------------------------ */
+
+        .nv-halfpage-cols .nv-left-col .nv-limited-width-content{
+            float: left;
+        }
+
+        .nv-halfpage-cols .nv-right-col .nv-limited-width-content{
+            float: right;
+        }
+
+    /* ------------------------------------------------------
+    
+        5.7. Isotope
+        
+    ------------------------------------------------------ */
+
+        .nv-filter > li > a::after{
+            right: -2px;
+            left: auto;
+        }
+
+        .nv-filter > li > a::before{
+            border-width: 3px 0 3px 3px;
+            right: 0;
+            left: -2px;
+        }
+
+/* ------------------------------------------------------
+    
+    6. UI Elements
+    
+------------------------------------------------------ */
+
+	/* ------------------------------------------------------
+    
+        6.1. Buttons
+        
+    ------------------------------------------------------ */
+
+    	.nv-btn-icon-2{
+            border-width: 1px 1px 1px 0;
+        }
+
+        .nv-btn-icon-2.nv-large{
+            border-width: 3px 3px 3px 0;
+        }
+
+        .nv-btn-icon-2::before{
+            right: auto;
+            left: 0px;
+        }
+
+    /* ------------------------------------------------------
+    
+        6.2. Forms
+        
+    ------------------------------------------------------ */
+
+    	.nv-searchform input:not([type="submit"]){
+            padding-right: 0px;
+            padding-left: 40px;
+        }
+
+        .nv-searchform button{
+        	right: auto;
+        	left: 0;
+        }
+
+        .nv-halfpage-cols .nv-right-col .nv-contactform{
+            margin-left: 0px;
+            margin-right: 23%;
+        }
+
+    /* ------------------------------------------------------
+    
+        6.4. Lists
+        
+    ------------------------------------------------------ */
+
+		.nv-info-list .fa{
+	        left: auto;
+            right: 0;
+	    }
+
+        .nv-list > li,
+        .nv-info-list > li{
+            padding-left: 0px;
+            padding-right: 35px;
+        }
+
+        .nv-list > li::before{
+            content: "\f177";
+            left: auto;
+            right: 0;
+        }
+
+        .nv-details-list .nv-info-item-name{
+            float: right;
+        }
+
+/* ------------------------------------------------------
+    
+    7. Components
+    
+------------------------------------------------------ */
+
+    /* ------------------------------------------------------
+    
+        7.1. Info Blocks
+        
+    ------------------------------------------------------ */
+
+        .nv-info-blocks[class*="nv-cols-"] .nv-info-block{
+            float: right;
+        }
+
+        .nv-info-blocks.nv-cols-4 .nv-info-block:nth-child(4n+1),
+        .nv-info-blocks.nv-cols-3 .nv-info-block:nth-child(3n+1),
+        .nv-info-blocks.nv-cols-2 .nv-info-block:nth-child(2n+1){
+            clear: right;
+        }
+
+    /* ------------------------------------------------------
+    
+        7.2. Accordion & Toggles
+        
+    ------------------------------------------------------ */
+
+        .nv-accordion-title{
+            padding-right: 20px;
+            padding-left: 50px;
+        }
+
+        .nv-accordion-title::after{
+            right: auto;
+            left: 15px;
+        }
+
+    /* ------------------------------------------------------
+    
+        7.3. Progress Bars
+        
+    ------------------------------------------------------ */
+
+        .nv-no-flexbox .nv-progress-bars-container[class*="nv-cols-"] .nv-progress-bar{
+            float: right;
+        }
+
+        .nv-no-flexbox .nv-progress-bars-container.nv-cols-2 .nv-progress-bar:nth-child(2n+1),
+        .nv-no-flexbox .nv-progress-bars-container.nv-cols-3 .nv-progress-bar:nth-child(3n+1),
+        .nv-no-flexbox .nv-progress-bars-container.nv-cols-4 .nv-progress-bar:nth-child(4n+1){
+            clear: right;
+        }
+
+        .nv-pb-title{
+            padding-right: 0px;
+            padding-left: 50px;
+        }
+
+        .nv-pb-indicator{
+            left: auto;
+            right: 0;
+        }
+
+        .nv-pb-element::before{
+            right: auto;
+            left: 0;
+        }
+
+    /* ------------------------------------------------------
+    
+        7.4. Counters
+        
+    ------------------------------------------------------ */
+
+        .nv-counters-container.nv-cols-4 .nv-counter,
+        .nv-counters-container.nv-cols-3 .nv-counter,
+        .nv-counters-container.nv-cols-2 .nv-counter{
+            float: right;
+        }
+
+        .nv-counters-container.nv-cols-4 .nv-counter:nth-child(4n+1),
+        .nv-counters-container.nv-cols-3 .nv-counter:nth-child(3n+1),
+        .nv-counters-container.nv-cols-2 .nv-counter:nth-child(2n+1){
+            clear: right;
+        }
+
+        .nv-counters-container[class*="nv-cols-"] .nv-counter:not(:last-child)::after{
+            content: "\\";
+            left: auto;
+            right: 100%;
+            margin-left: 0px;
+            margin-right: -1px;
+        }
+
+    /* ------------------------------------------------------
+    
+        7.5. Carousels & Sliders
+        
+    ------------------------------------------------------ */
+
+        .owl-nav .owl-prev::after{
+            content: "\f178";
+        }
+
+        .owl-nav .owl-next::after{
+            content: "\f177";
+        }
+
+        .owl-nav .owl-prev::before{
+            left: auto;
+            right: 0;
+        }
+
+        .owl-nav .owl-next::before{
+            right: auto;
+            left: 0;
+        }
+
+        .owl-nav .owl-prev{
+            border-width: 1px 0 1px 1px;
+            left: auto;
+            right: 20px;
+        }
+
+        .owl-nav .owl-next{
+            border-width: 1px 1px 1px 0;
+            right: auto;
+            left: 20px;
+        }
+
+        .nv-rev-slider .tp-leftarrow .tp-arr-titleholder::before{
+            content: "\f178";
+            margin-right: 0;
+            margin-left: 10px;
+        }
+
+        .nv-rev-slider .tp-rightarrow .tp-arr-titleholder::after{
+            content: "\f177";
+            margin-left: 0;
+            margin-right: 10px;
+        }
+
+         .nv-caption-heading-7 .nv-caption-lines-top{
+            border-width: 1px 0 1px 1px;
+            left: auto;
+            right: 100%;
+            margin-left: auto;
+        }
+
+        .nv-caption-heading-7 .nv-caption-lines-top::before{
+            right: auto;
+            left: 100%;
+        }
+
+        [class*="nv-caption-lines"]{
+            right: auto;
+            margin-right: 0;
+            left: 100%;
+            margin-left: -10px;
+        }
+
+        [class*="nv-caption-lines"]::before{
+            left: auto;
+            right: -5px;
+        }
+
+        .nv-caption-lines-left{
+            right: auto;
+            left: 100%;
+            margin-right: 0px;
+            margin-left: 10px;
+        }
+
+        .nv-caption-heading-4 .nv-caption-lines-bottom{
+            border-width: 0 1px;
+            right: auto;
+            left: 50%;
+        }
+
+        .nv-caption-heading-4 .nv-caption-lines-left{
+            border-width: 1px 1px;
+        }
+
+    /* ------------------------------------------------------
+    
+        7.6. Testimonials
+        
+    ------------------------------------------------------ */
+
+        .nv-testimonials.owl-carousel:not([class*="nv-cols-"]) .owl-prev{
+            left: auto;
+            right: 8.6%;
+        }
+
+        .nv-testimonials.owl-carousel:not([class*="nv-cols-"]) .owl-next{
+            right: auto;
+            left: 8.6%;
+        }
+
+        .nv-testimonials.nv-type-2 .nv-author-image{
+            margin-right: 0px;
+            margin-left: 25px;
+        }
+
+        .nv-testimonials.nv-type-2.owl-carousel .owl-prev{
+            left: auto;
+            right: 0;
+        }
+
+        .nv-testimonials.nv-type-2.owl-carousel .owl-next{
+            right: auto;
+            left: 0;
+        }
+
+    /* ------------------------------------------------------
+    
+        7.9. Message Boxes
+        
+    ------------------------------------------------------ */
+
+        .nv-message-box{
+            text-align: right;
+        }
+
+        .nv-message-box .nv-mbox-inner{
+            border-width: 3px 0px 3px 3px;
+            padding-left: 20px;
+            padding-right: 70px;
+        }
+
+        .nv-message-box .nv-mbox-inner::before{
+            left: auto;
+            right: 0;
+        }
+
+        .nv-message-box .nv-mbox-icon{
+            left: auto;
+            right: 20px;
+        }
+
+    /* ------------------------------------------------------
+    
+        7.12. Gallery & LightBox
+        
+    ------------------------------------------------------ */
+
+        .nv-fancybox .fancybox-close{
+            right: auto;
+            left: -50px;
+        }
+
+    /* ------------------------------------------------------
+    
+        7.13. Instagram Feed
+        
+    ------------------------------------------------------ */
+
+        .nv-account-link{
+            margin-left: 0px;
+            margin-right: 17px;
+            padding-right: 0px;
+            padding-left: 40px;
+            border-width: 1px 0 1px 1px;
+        }
+
+        .nv-account-link::before{
+            left: auto;
+            right: 0;
+        }
+
+    /* ------------------------------------------------------
+    
+        7.16. Team Members
+        
+    ------------------------------------------------------ */
+
+    	.nv-team-members-container[class*="nv-cols-"] .nv-team-member{
+    		float: right;
+    	}
+
+    	.nv-team-members-container.nv-cols-4 .nv-team-member:nth-child(4n+1),
+        .nv-team-members-container.nv-cols-3 .nv-team-member:nth-child(3n+1),
+        .nv-team-members-container.nv-cols-2 .nv-team-member:nth-child(2n+1){
+            clear: right;
+        }
+
+    /* ------------------------------------------------------
+    
+        7.19. Services
+        
+    ------------------------------------------------------ */
+
+        .nv-services[class*="nv-cols-"] .nv-service{
+            float: right;
+        }
+
+        .nv-services.nv-cols-2 .nv-service:nth-child(2n+1),
+        .nv-services.nv-cols-3 .nv-service:nth-child(3n+1),
+        .nv-sidebar .nv-services.nv-cols-4 .nv-service:nth-child(3n+1),
+        .nv-services.nv-cols-4 .nv-service:nth-child(4n+1){
+            clear: right;
+        }
+
+        .nv-sidebar .nv-services.nv-cols-4 .nv-service:nth-child(4n+1){
+            clear: none;
+        }
+
+        /* ------------------------------------------------------
+    
+            7.19.1. Style 1
+            
+        ------------------------------------------------------ */
+
+            .nv-services.nv-type-1 .nv-service:nth-child(2n){
+                direction: ltr;
+            }
+
+            .nv-services.nv-type-1 .nv-service-image,
+            .nv-services.nv-type-1 .nv-service-description{
+                direction: rtl;
+            }
+
+            .nv-services.nv-type-1 .nv-service-icon{
+                border-width: 3px 3px 3px 0;
+            }
+
+            .nv-services.nv-type-1 .nv-service-icon::before{
+                right: auto;
+                left: 0;
+            }
+
+        /* ------------------------------------------------------
+    
+            7.19.2. Style 2, 4
+            
+        ------------------------------------------------------ */
+
+            .nv-services.nv-type-2 .nv-service{
+                padding-left: 0px;
+                padding-right: 60px;
+            }
+
+            .nv-services.nv-type-2 .nv-service-icon{
+                left: auto;
+                right: 0;
+            }
+
+            .nv-services.nv-rtl.nv-type-2 .nv-service{
+                text-align: left;
+                padding-left: 60px;
+                padding-right: 0px;
+            }
+
+            .nv-services.nv-rtl.nv-type-4 .nv-service{
+                text-align: left;
+            }
+
+            .nv-services.nv-rtl.nv-type-2 .nv-service-icon{
+                right: auto;
+                left: 0;
+            }
+
+    /* ------------------------------------------------------
+    
+        7.20. 3d Images
+    
+    ------------------------------------------------------ */
+
+        .nv-3d-images.nv-layout-1 > img:nth-child(2){
+            left: auto;
+            right: 27.78%;
+        }
+
+        .nv-3d-images.nv-layout-2 > img:nth-child(2){
+            left: auto;
+            right: 0;
+        }
+
+        .nv-3d-images.nv-layout-2 > img:nth-child(3){
+            right: auto;
+            left: 0;
+        }
+
+    /* ------------------------------------------------------
+    
+        7.21. Video Tabs
+    
+    ------------------------------------------------------ */
+
+        .nv-tabs.nv-videos .nv-tabs-nav{
+            padding-right: 0px;
+            padding-left: 30px;
+        }
+
+        .nv-tabs.nv-videos.nv-type-2{
+            direction: ltr;
+        }
+
+        .nv-tabs.nv-videos.nv-type-2 .nv-tabs-nav,
+        .nv-tabs.nv-videos.nv-type-2 .nv-videos-col{
+            direction: rtl;
+        }
+
+        .nv-tabs.nv-videos.nv-type-2 .nv-tabs-nav{
+            padding-left: 0px;
+            padding-right: 30px;
+        }
+
+    /* ------------------------------------------------------
+    
+        7.22. Awards
+    
+    ------------------------------------------------------ */
+
+        .nv-award-icon{
+            margin-right: 0px;
+            margin-left: 7px;
+        }
+
+    /* ------------------------------------------------------
+    
+        7.23. List of Experience
+    
+    ------------------------------------------------------ */
+
+        .nv-experience-list .nv-el-item{
+            float: right;
+            clear: right;
+            text-align: left;
+            padding-right: 0px;
+            padding-left: 110px;
+        }
+
+        .nv-experience-list .nv-el-item:nth-child(2n){
+            text-align: right;
+            float: left;
+            clear: left;
+            padding-left: 0px;
+            padding-right: 110px;
+        }
+
+        .nv-experience-list .nv-el-item::before{
+            right: auto;
+            left: 0;
+        }
+
+        .nv-experience-list .nv-el-item:nth-child(2n)::before{
+            left: auto;
+            right: -1px;
+        }
+
+        .nv-experience-list .nv-position::after{
+            right: auto;
+            left: 65px;
+        }
+
+        .nv-experience-list .nv-el-item:nth-child(2n) .nv-position::after{
+            left: auto;
+            right: 65px;
+        }
+
+        .nv-experience-list .nv-el-item:last-child::after{
+            right: auto;
+            left: -35px;
+        }
+
+        .nv-experience-list .nv-el-item:last-child:nth-child(2n)::after{
+            left: auto;
+            right: -35px;
+        }
+
+	/* ------------------------------------------------------
+    
+        7.24. Modal Windows
+        
+    ------------------------------------------------------ */
+
+    	.arcticmodal-close{
+    		right: auto;
+    		left: 20px;
+    	}
+
+/* ------------------------------------------------------
+    
+    8. Sidebar
+    
+------------------------------------------------------ */
+
+    /* ------------------------------------------------------
+    
+        8.1. Widgets
+        
+    ------------------------------------------------------ */
+
+        .nv-widget-title{
+            padding-right: 0px;
+            padding-left: 20px;
+        }
+
+        .nv-widget-title::after,
+        .nv-widget-title::before{
+            left: auto;
+            right: 0;
+        }
+
+        .nv-widget-title::before{
+            left: 0;
+            border-width: 3px 0 3px 3px;
+        }
+
+        /* ------------------------------------------------------
+
+            8.1.1. Categories, Archives Widgets
+            
+        ------------------------------------------------------ */
+
+            .nv-widget-list > li > a{
+                padding-right: 35px;
+                padding-left: 50px;
+            }
+
+            .nv-widget-list .nv-amount{
+                right: auto;
+                left: 0;
+            }
+
+            .nv-widget-list > li > a::before{
+                content:"\f177";
+                left: auto;
+                right: 0;
+            }
+
+        /* ------------------------------------------------------
+
+            8.1.2. Entries Widget
+            
+        ------------------------------------------------------ */
+
+            .nv-widget .nv-entries .nv-entry-thumb-area{
+                float: right;
+                margin-right: 0px;
+                margin-left: 30px;
+            }
+
+            .nv-widget .nv-entries .nv-entry-title::after{
+                left: auto;
+                right: 0;
+            }
+
+        /* ------------------------------------------------------
+
+            8.1.3. Tag Cloud Widget
+            
+        ------------------------------------------------------ */
+
+            .nv-tagcloud{
+                text-align: right;
+            }
+
+/* ------------------------------------------------------
+    
+    9. Portfolio
+    
+------------------------------------------------------ */
+
+    .nv-portfolio.nv-type-1 .nv-project-actions{
+        right: auto;
+        left: 20px;
+    }
+
+    .nv-sidebar .nv-portfolio.nv-type-1 .nv-project-actions{
+        right: auto;
+        left: 10px;
+    }
+
+    /* ------------------------------------------------------
+    
+        9.1. Style 3 (Free Style)
+        
+    ------------------------------------------------------ */
+
+        .nv-portfolio.nv-type-3 .nv-col:nth-child(5n+1){
+            left: auto;
+            right: 0;
+        }
+
+        .nv-portfolio.nv-type-3 .nv-col:nth-child(5n+1) .nv-project-name,
+        .nv-portfolio.nv-type-3 .nv-col:nth-child(5n+4) .nv-project-name{
+            left: auto;
+            right: 100%;
+            margin-left: 0px;
+            margin-right: 30px;
+        }
+
+        .nv-portfolio.nv-type-3 .nv-col:nth-child(5n+1) .nv-project-name::after,
+        .nv-portfolio.nv-type-3 .nv-col:nth-child(5n+4) .nv-project-name::after{
+            right: auto;
+            left: 100%;
+            margin-right: 0px;
+            margin-left: -35px;
+        }
+
+        .nv-portfolio.nv-type-3 .nv-col:nth-child(5n+1) .nv-project-cats,
+        .nv-portfolio.nv-type-3 .nv-col:nth-child(5n+4) .nv-project-cats{
+            left: auto;
+            right: 0;
+        }
+
+        .nv-portfolio.nv-type-3 .nv-col:nth-child(5n+2){
+            right: auto;
+            left: 0;
+        }
+
+        .nv-portfolio.nv-type-3 .nv-col:nth-child(5n+5) .nv-project-name,
+        .nv-portfolio.nv-type-3 .nv-col:nth-child(5n+3) .nv-project-name,
+        .nv-portfolio.nv-type-3 .nv-col:nth-child(5n+2) .nv-project-name{
+            right: auto;
+            left: 100%;
+            margin-right: 0px;
+            margin-left: 30px;
+            text-align: left;
+        }
+
+        .nv-portfolio.nv-type-3 .nv-col:nth-child(5n+5) .nv-project-name::after,
+        .nv-portfolio.nv-type-3 .nv-col:nth-child(5n+3) .nv-project-name::after,
+        .nv-portfolio.nv-type-3 .nv-col:nth-child(5n+2) .nv-project-name::after{
+            left: auto;
+            right: 100%;
+            margin-left: 0px;
+            margin-right: -35px;
+        }
+
+        .nv-portfolio.nv-type-3 .nv-col:nth-child(5n+5) .nv-project-cats,
+        .nv-portfolio.nv-type-3 .nv-col:nth-child(5n+3) .nv-project-cats,
+        .nv-portfolio.nv-type-3 .nv-col:nth-child(5n+2) .nv-project-cats{
+            right: auto;
+            left: 0;
+        }
+
+        .nv-portfolio.nv-type-3 .nv-col:nth-child(5n+4){
+            left: auto;
+            right: 0;
+        }
+
+        .nv-portfolio.nv-type-3 .nv-col:nth-child(5n+5){
+            right: auto;
+            left: 8.35%;
+        }
+
+    /* ------------------------------------------------------
+    
+        9.4. Ribbon Style
+        
+    ------------------------------------------------------ */
+
+        .nv-portfolio.nv-ribbon .nv-project-name{
+            left: auto;
+            right: 60px;
+        }
+
+    /* ------------------------------------------------------
+    
+        9.5. Single Project
+        
+    ------------------------------------------------------ */
+
+        .nv-projects-nav .nv-prev{
+            float: right;
+        }
+
+        .nv-projects-nav .nv-next{
+            float: left;
+        }
+
+/* ------------------------------------------------------
+    
+    10. Blog
+    
+------------------------------------------------------ */
+
+    .nv-continue-reading::after{
+        content: "\f177";
+        margin-left: 0px;
+        margin-right: 10px;
+    }
+
+    /* ------------------------------------------------------
+    
+        10.1. Entries
+        
+    ------------------------------------------------------ */
+
+        .nv-entry-meta > li:not(:last-child)::after{
+            content: "\\";
+            margin-left: 0px;
+            margin-right: 4px;
+        }
+
+        .nv-entry-link{
+            padding-left: 30px;
+            padding-right: 110px;
+        }
+
+        .nv-entry-link::after,
+        .nv-entry-link::before{
+            left: auto;
+            right: -1px;
+        }
+
+        .nv-entry-link::before{
+            left: -1px;
+            border-width: 3px 0 3px 3px;
+        }
+
+        .nv-entry-link .nv-icon{
+            left: auto;
+            right: 20px;
+        }
+
+        /* ------------------------------------------------------
+    
+            10.1.1. Style 1
+            
+        ------------------------------------------------------ */
+
+            .nv-entries.nv-type-1 .nv-entry::before{
+                right: -10000%;
+                left: 42.5%;
+            }
+
+            .nv-entries.nv-type-1 .nv-entry-thumb-area{
+                float: right;
+                margin-right: 0px;
+                margin-left: 30px;
+            }
+
+            .nv-entries.nv-type-1 .nv-entry-cats{
+                left: auto;
+                right: 0;
+            }
+
+            .nv-entries.nv-type-1 .nv-byline{
+                right: auto;
+                left: 0;
+            }
+
+            .nv-entries.nv-type-1 .nv-col:nth-child(2n) .nv-entry-thumb-area{
+                float: left;
+                margin-left: 0px;
+                margin-right: 30px;
+            }
+
+            .nv-entries.nv-type-1 .nv-col:nth-child(2n) .nv-entry{
+                text-align: left;
+            }
+
+            .nv-entries.nv-type-1 .nv-col:nth-child(2n) .nv-entry::before{
+                right: 42.5%;
+                left: -10000%;
+            }
+
+            .nv-entries.nv-type-1 .nv-col:nth-child(2n) .nv-entry-cats{
+                right: auto;
+                left: 0;
+            }
+
+            .nv-entries.nv-type-1 .nv-col:nth-child(2n) .nv-byline{
+                left: auto;
+                right: 0;
+            }
+
+        /* ------------------------------------------------------
+    
+            10.1.2. Style 2, 4, Single Entry
+            
+        ------------------------------------------------------ */
+
+            .nv-entries.nv-type-2 .nv-entry-title::after,
+            .nv-entries.nv-type-4 .nv-entry-title::after,
+            .nv-entry.nv-single .nv-entry-title::after{
+                left: auto;
+                right: 0;
+            }
+
+            .nv-entries.nv-type-4 .nv-entry-cats,
+            .nv-entry.nv-single .nv-entry-cats{
+                left: auto;
+                right: 20px;
+            }
+
+            .nv-entries.nv-type-2 .nv-entry-extra .nv-byline,
+            .nv-entries.nv-type-4 .nv-entry-extra .nv-entry-meta{
+                padding-right: 0px;
+                padding-left: 15px;
+            }
+
+            .nv-entries.nv-type-2 .nv-entry-extra .nv-continue-reading-wrap,
+            .nv-entries.nv-type-4 .nv-entry-extra .nv-continue-reading-wrap{
+                padding-left: 0px;
+                padding-right: 15px;
+                text-align: left;
+            }
+
+        /* ------------------------------------------------------
+    
+            10.1.3. Style 3
+            
+        ------------------------------------------------------ */
+
+            .nv-entries.nv-type-3 .nv-entry{
+                padding-left: 0px;
+                padding-right: 50%;
+            }
+
+            .nv-entries.nv-type-3 .nv-entry-thumb-area{
+                border-width: 0 0 0 15px;
+                left: auto;
+                right: 0;
+            }
+
+            .nv-entries.nv-type-3 .nv-entry-body-area{
+                border-width: 0 15px 0 0;
+            }
+
+        /* ------------------------------------------------------
+    
+            10.1.4. Single Entry
+            
+        ------------------------------------------------------ */
+
+            .nv-entry.nv-single .nv-entry-extra .nv-tagcloud{
+                padding-right: 0;
+                padding-left: 15px;
+                float: right;
+            }
+
+            .nv-entry.nv-single .nv-entry-extra .nv-share-wrap{
+                padding-left: 0;
+                padding-right: 15px;
+                text-align: left;
+                float: left;
+            }
+
+    /* ------------------------------------------------------
+    
+        10.2. Author Box
+        
+    ------------------------------------------------------ */
+
+        .nv-author.nv-entry-author .nv-author-image{
+            float: right;
+            margin-right: 0px;
+            margin-left: 30px;
+        }
+
+    /* ------------------------------------------------------
+    
+        10.3. Comments
+        
+    ------------------------------------------------------ */
+
+        .nv-comment .nv-comment{
+            padding-left: 0px;
+            padding-right: 50px;
+        }
+
+        .nv-comment-body{
+            padding-left: 0px;
+            padding-right: 130px;
+        }
+
+        .nv-comment .nv-author-image{
+            left: auto;
+            right: 0;
+        }
+
+        .nv-comment-meta{
+            padding-right: 0px;
+            padding-left: 130px;
+        }
+
+        .nv-comment .nv-comment-metadata{
+            right: auto;
+            left: 0;
+        }
+
+        .nv-comment-reply-link::after{
+            margin-left: auto;
+            margin-right: 9px;
+        }
+
+/* ------------------------------------------------------
+    
+    13. Footer
+    
+------------------------------------------------------ */
+
+    .nv-footer .nv-widget .nv-entries .nv-entry-thumb-area{
+        margin-right: 0px;
+        margin-left: 20px;
+    }
+
+/* ------------------------------------------------------
+    
+    14. Media Queries
+    
+------------------------------------------------------ */
+
+@media only screen and (min-width: 991px){
+
+    .nv-table-row-md > [class*="col-"]:first-child{
+        padding-right: 0px;
+        padding-left: 15px;
+    }
+
+    .nv-table-row-md > [class*="col-"]:last-child{
+        padding-left: 0px;
+        padding-right: 15px;
+    }
+
+}
+
+@media only screen and (min-width: 768px){
+
+    .nv-table-row-sm > [class*="col-"]:first-child{
+        padding-right: 0px;
+        padding-left: 15px;
+    }
+
+    .nv-table-row-sm > [class*="col-"]:last-child{
+        padding-left: 0px;
+        padding-right: 15px;
+    }
+
+}
+
+@media only screen and (max-width: 1199px){
+
+    .nv-sidebar .nv-info-blocks.nv-cols-3 .nv-info-block:nth-child(3n+1),
+    .nv-sidebar .nv-info-blocks.nv-cols-4 .nv-info-block:nth-child(4n+1),
+    .nv-sidebar .nv-services.nv-cols-3 .nv-service:nth-child(3n+1),
+    .nv-sidebar .nv-services.nv-cols-4 .nv-service:nth-child(3n+1),
+    .nv-sidebar .nv-counters-container.nv-cols-3 .nv-counter:nth-child(3n+1),
+    .nv-sidebar .nv-counters-container.nv-cols-4 .nv-counter:nth-child(4n+1),
+    .nv-no-flexbox .nv-sibebar .nv-progress-bars-container.nv-cols-4 .nv-progress-bar:nth-child(4n+1){
+        clear: none;
+    }
+
+    .nv-sidebar .nv-info-blocks.nv-cols-3 .nv-info-block:nth-child(2n+1),
+    .nv-sidebar .nv-info-blocks.nv-cols-4 .nv-info-block:nth-child(2n+1),
+    .nv-sidebar .nv-services.nv-cols-3 .nv-service:nth-child(2n+1),
+    .nv-sidebar .nv-services.nv-cols-4 .nv-service:nth-child(2n+1),
+    .nv-sidebar .nv-counters-container.nv-cols-3 .nv-counter:nth-child(2n+1),
+    .nv-sidebar .nv-counters-container.nv-cols-4 .nv-counter:nth-child(2n+1),
+    .nv-no-flexbox .nv-sibebar .nv-progress-bars-container.nv-cols-4 .nv-progress-bar:nth-child(3n+1){
+        clear: right;
+    }
+
+    .nv-halfpage-cols .nv-right-col .nv-contactform{
+        margin-right: 0;
+    }
+
+    .nv-portfolio.nv-type-1.nv-cols-3 .nv-project-actions{
+        right: auto;
+        left: 10px;
+    }
+
+    .nv-portfolio.nv-type-3 .nv-col:nth-child(5n+5){
+        left: 2%;
+    }
+
+    .nv-entries.nv-type-1 .nv-entry::before{
+        left: 33.5%;
+    }
+
+    .nv-entries.nv-type-1 .nv-col:nth-child(2n) .nv-entry::before{
+        right: 33.5%;
+    }
+
+}
+
+@media only screen and (max-width: 991px){
+
+    .nv-services.nv-cols-4 .nv-service:nth-child(4n+1),
+    .nv-info-blocks.nv-cols-4 .nv-info-block:nth-child(4n+1),
+    .nv-team-members-container.nv-cols-4 .nv-col:nth-child(4n+1),
+    .nv-awards.nv-cols-3:not(.owl-carousel) .nv-col:nth-child(3n+1),
+    .nv-sidebar .nv-team-members-container.nv-cols-3 .nv-col:nth-child(3n+1),
+    .nv-sidebar .nv-testimonials.nv-cols-2:not(.owl-carousel) .nv-col:nth-child(2n+1),
+    .nv-no-flexbox .nv-progress-bars-container.nv-cols-4 .nv-progress-bar:nth-child(4n+1),
+    .nv-no-flexbox .nv-sibebar .nv-progress-bars-container.nv-cols-4 .nv-progress-bar:nth-child(3n+1){
+        clear: none;
+    }
+
+    .nv-services.nv-cols-4 .nv-service:nth-child(2n+1),
+    .nv-info-blocks.nv-cols-4 .nv-info-block:nth-child(2n+1),
+    .nv-footer.nv-cols-4 .row .col-sm-6:nth-child(2n) + .col-sm-6,
+    .nv-awards.nv-cols-3:not(.owl-carousel) .nv-col:nth-child(2n+1),
+    .nv-team-members-container.nv-cols-4 .nv-col:nth-child(2n+1),
+    .nv-sidebar .nv-team-members-container.nv-cols-3 .nv-col:nth-child(2n+1),
+    .nv-no-flexbox .nv-progress-bars-container.nv-cols-4 .nv-progress-bar:nth-child(3n+1),
+    .nv-no-flexbox .nv-sidebar .nv-progress-bars-container.nv-cols-4 .nv-progress-bar:nth-child(2n+1){
+        clear: right;
+    }
+
+    /* ------------------------------------------------------
+        
+            Navigation
+        
+    ------------------------------------------------------ */
+
+        .nv-nav-wrap .nv-nav-close-btn{
+            right: auto;
+            left: 20px;
+        }
+
+        .nv-navigation .nv-has-dropdown::before,
+        .nv-navigation .nv-has-dropdown .nv-has-dropdown::before{
+            right: auto;
+            left: 20px;
+        }
+
+        .nv-navigation .nv-has-dropdown .nv-has-dropdown::before{
+            content: "\f0d7";
+        }
+
+        .nv-navigation > .nv-has-dropdown > a{
+        	padding-left: 45px;
+        	padding-right: 45px;
+        }
+
+    .nv-portfolio.nv-type-1 .nv-project-actions{
+        left: 10px;
+    }
+
+    .nv-tabs.nv-videos.nv-type-2 .nv-tabs-nav{
+        padding-right: 0px;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px){
+
+    .nv-widget .nv-entries .nv-entry-thumb-area{
+        margin-left: 15px;
+    }
+
+}
+
+@media only screen and (max-width: 767px){
+
+    .nv-underlined-title.nv-uc-title.align-right{
+        text-align: right
+    }
+
+    .nv-underlined-title.nv-uc-title.align-right::after{
+        left: auto;
+        right: 0;
+    }
+
+    .nv-portfolio.nv-type-3 .nv-project-actions{
+        right: auto;
+        left: 10px;
+    }
+
+    .nv-tabs.nv-videos .nv-tabs-nav{
+        padding-left: 0;
+    }
+
+    .nv-experience-list .nv-el-item{
+        padding-left: 60px;
+    }
+
+    .nv-experience-list .nv-el-item:nth-child(2n){
+        padding-right: 60px;
+    }
+
+    .nv-experience-list .nv-position::after{
+        left: 30px;
+    }
+
+    .nv-experience-list .nv-el-item:nth-child(2n) .nv-position::after{
+        right: 30px;
+    }
+
+    .nv-portfolio.nv-ribbon .nv-project-name{
+        right: 40px;
+    }
+
+    .nv-entries.nv-type-4 .nv-entry-extra .nv-continue-reading-wrap{
+        padding-right: 0;
+        text-align: inherit;
+    }
+
+    .nv-entries.nv-type-4 .nv-entry-extra .nv-entry-meta{
+        padding-left: 0px;
+    }
+
+}
+
+@media only screen and (max-width: 500px){
+
+	img.alignright{
+        margin-right: 0px;
+    }
+
+    img.alignleft{
+        margin-left: 0px;
+    }
+
+    .nv-widget .nv-entries .nv-entry-thumb-area{
+        margin-left: 15px;
+    }
+
+    .nv-author.nv-entry-author .nv-author-image{
+        margin-left: 20px;
+    }
+
+    .nv-comment-body{
+        padding-right: 100px;
+    }
+
+    .nv-entries.nv-type-2 .nv-entry-extra .nv-continue-reading-wrap{
+        padding-right: 0;
+        text-align: inherit;
+    }
+
+    .nv-comment-meta,
+    .nv-entries.nv-type-2 .nv-entry-extra .nv-byline{
+        padding-left: 0px;
+    }
+
+    .nv-comment .nv-comment{
+        padding-right: 30px;
+    }
+
+    .nv-testimonials.owl-carousel:not([class*="nv-cols-"]) .owl-prev{
+        right: 0;
+    }
+
+    .nv-testimonials.owl-carousel:not([class*="nv-cols-"]) .owl-next{
+        left: 0;
+    }
+
+    .nv-testimonials.nv-type-2 .nv-author-image{
+        margin-left: 15px;
+    }
+
+    .nv-fancybox .fancybox-close{
+        right: auto;
+        left: 0;
+    }
+
+    .nv-entry.nv-single .nv-entry-extra .nv-tagcloud,
+    .nv-entry.nv-single .nv-entry-extra .nv-share-wrap{
+        padding-right: 0;
+        padding-left: 0;
+        float: none;
+        text-align: inherit;
+    }
+
+    .nv-entries.nv-type-3 .nv-entry{
+        padding-right: 0px;
+    }
+
+}
+
+/* ------------------------------------------------
+
+	Bootstrap RTL layout
+
+------------------------------------------------ */
+
+@media only screen and (min-width: 768px){
+
+	.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+		float: right;
+	}
+
+	.col-sm-offset-12{
+		margin-left: 0px;
+		margin-right: 100%;
+	}
+
+	.col-sm-offset-11{
+		margin-left: 0px;
+		margin-right:91.66666667%;
+	}
+
+	.col-sm-offset-10{
+		margin-left: 0px;
+		margin-right:83.33333333%;
+	}
+
+	.col-sm-offset-9{
+		margin-left: 0px;
+		margin-right:75%;
+	}
+
+	.col-sm-offset-8{
+		margin-left: 0px;
+		margin-right:66.66666667%;
+	}
+
+	.col-sm-offset-7{
+		margin-left: 0px;
+		margin-right:58.33333333%;
+	}
+
+	.col-sm-offset-6{
+		margin-left: 0px;
+		margin-right:50%;
+	}
+
+	.col-sm-offset-5{
+		margin-left: 0px;
+		margin-right:41.66666667%;
+	}
+
+	.col-sm-offset-4{
+		margin-left: 0px;
+		margin-right:33.33333333%;
+	}
+
+	.col-sm-offset-3{
+		margin-left: 0px;
+		margin-right:25%;
+	}
+
+	.col-sm-offset-2{
+		margin-left: 0px;
+		margin-right:16.66666667%;
+	}
+
+	.col-sm-offset-1{
+		margin-left: 0px;
+		margin-right:8.33333333%;
+	}
+
+	.col-sm-offset-0{
+		margin-left: 0px;
+		margin-right:0;
+	}
+
+}
+
+@media only screen and (min-width: 992px){
+
+	.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12{
+		float: right;
+	}
+
+	.col-md-offset-12{
+		margin-left: 0px;
+		margin-right: 100%;
+	}
+
+	.col-md-offset-11{
+		margin-left: 0px;
+		margin-right:91.66666667%;
+	}
+
+	.col-md-offset-10{
+		margin-left: 0px;
+		margin-right:83.33333333%;
+	}
+
+	.col-md-offset-9{
+		margin-left: 0px;
+		margin-right:75%;
+	}
+
+	.col-md-offset-8{
+		margin-left: 0px;
+		margin-right:66.66666667%;
+	}
+
+	.col-md-offset-7{
+		margin-left: 0px;
+		margin-right:58.33333333%;
+	}
+
+	.col-md-offset-6{
+		margin-left: 0px;
+		margin-right:50%;
+	}
+
+	.col-md-offset-5{
+		margin-left: 0px;
+		margin-right:41.66666667%;
+	}
+
+	.col-md-offset-4{
+		margin-left: 0px;
+		margin-right:33.33333333%;
+	}
+
+	.col-md-offset-3{
+		margin-left: 0px;
+		margin-right:25%;
+	}
+
+	.col-md-offset-2{
+		margin-left: 0px;
+		margin-right:16.66666667%;
+	}
+
+	.col-md-offset-1{
+		margin-left: 0px;
+		margin-right:8.33333333%;
+	}
+
+	.col-md-offset-0{
+		margin-left: 0px;
+		margin-right:0;
+	}
+
+}
+
+@media only screen and (min-width: 1199px){
+
+	.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12{
+		float: right;
+	}
+
+	.col-lg-offset-12{
+		margin-left: 0px;
+		margin-right: 100%;
+	}
+
+	.col-lg-offset-11{
+		margin-left: 0px;
+		margin-right:91.66666667%;
+	}
+
+	.col-lg-offset-10{
+		margin-left: 0px;
+		margin-right:83.33333333%;
+	}
+
+	.col-lg-offset-9{
+		margin-left: 0px;
+		margin-right:75%;
+	}
+
+	.col-lg-offset-8{
+		margin-left: 0px;
+		margin-right:66.66666667%;
+	}
+
+	.col-lg-offset-7{
+		margin-left: 0px;
+		margin-right:58.33333333%;
+	}
+
+	.col-lg-offset-6{
+		margin-left: 0px;
+		margin-right:50%;
+	}
+
+	.col-lg-offset-5{
+		margin-left: 0px;
+		margin-right:41.66666667%;
+	}
+
+	.col-lg-offset-4{
+		margin-left: 0px;
+		margin-right:33.33333333%;
+	}
+
+	.col-lg-offset-3{
+		margin-left: 0px;
+		margin-right:25%;
+	}
+
+	.col-lg-offset-2{
+		margin-left: 0px;
+		margin-right:16.66666667%;
+	}
+
+	.col-lg-offset-1{
+		margin-left: 0px;
+		margin-right:8.33333333%;
+	}
+
+	.col-lg-offset-0{
+		margin-left: 0px;
+		margin-right:0;
+	}
+
+}
